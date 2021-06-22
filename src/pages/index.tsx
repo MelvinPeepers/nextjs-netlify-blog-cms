@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
-import { SocialList } from "../components/SocialList";
 
 export default function Index() {
   return (
@@ -11,7 +10,7 @@ export default function Index() {
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
       <div className="container">
-          <div data-netlify-identity-button>Login with Netlify Identity</div>
+        <h1 className="title">Welcome to this demo blog!</h1>
       </div>
       <style jsx>{`
         .container {

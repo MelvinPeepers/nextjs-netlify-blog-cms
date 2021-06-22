@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Burger from "./Burger";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AuthContext } from "../stores/authContext.js";
 
 export default function Navigation() {
   const router = useRouter();
   const [active, setActive] = useState(false);
+  const { user, login } = useContext(AuthContext)
+  console.log(user)
   return (
     <>
       <Burger active={active} onClick={() => setActive(!active)} />
@@ -27,6 +30,7 @@ export default function Navigation() {
               </a>
             </Link>
           </li>
+          <li onClick={login}>Login</li>
         </ul>
         <style jsx>
           {`
