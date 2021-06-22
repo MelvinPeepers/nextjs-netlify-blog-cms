@@ -18,6 +18,7 @@ export default function Index() {
           <span className="handle">@nextjs-netlify-blog</span>
           <h2>A blog template with Next.js and Netlify.</h2>
           <SocialList />
+          <div data-netlify-identity-button>Login with Netlify Identity</div>
         </div>
       </div>
       <style jsx>{`
