@@ -7,7 +7,7 @@ import { AuthContext } from "../stores/authContext.js";
 export default function Navigation() {
   const router = useRouter();
   const [active, setActive] = useState(false);
-  const { user, login } = useContext(AuthContext)
+  const { user, login, logout } = useContext(AuthContext)
   console.log(user)
   return (
     <>
@@ -31,6 +31,7 @@ export default function Navigation() {
             </Link>
           </li>
           <li onClick={login}>Login</li>
+          <li onClick={logout}>Log out</li>
         </ul>
         <style jsx>
           {`
