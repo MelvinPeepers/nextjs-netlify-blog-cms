@@ -10,7 +10,7 @@ export default function Index() {
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
       <div className="container">
-        <h1 className="title">Welcome to this demo blog!</h1>
+        <h1 className="title">Welcome to this Demo Blog!</h1>
       </div>
       <style jsx>{`
         .container {

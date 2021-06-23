@@ -31,7 +31,7 @@ export default function Navigation() {
             </Link>
           </li>
           <li onClick={login}>Login</li>
-          <li onClick={logout}>Log out</li>
+          {user && <li onClick={logout}>Log out</li>}
         </ul>
         <style jsx>
           {`
